@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Layout 2</title>
+  <style>
+    h5 {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+    h1 
+        {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+    h4
+        {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+    body 
+        {display:flex;justify-content:center;align-items:center;
+        min-height:100vh;background:#f795de;font-family:sans-serif;}
+    .card 
+        {width:320px;height:380px;border:3px solid #222;border-radius:8px;
+        padding:10px;background:#62f39a;display:flex;flex-direction:column;}
+    .frame 
+        {flex:1;border:2px solid #62f39a;display:grid;gap:6px;
+        grid-template-columns:1fr 1fr 70px;
+        grid-template-rows:40px 1fr 40px;
+        grid-template-areas:
+          "header header sidebar"
+          "col1 col2 sidebar"
+          "footer footer footer";}
+    .box 
+        {border:2px solid #000000;background:#f2f2f2;}
+    .header 
+        {grid-area:header;background: #b1afaf;}
+    .col1   
+        {grid-area:col1;background: #b1afaf;}
+    .col2   
+        {grid-area:col2;background: #b1afaf;}
+    .sidebar
+        {grid-area:sidebar;background: #b1afaf;}
+    .footer 
+        {grid-area:footer;background: #b1afaf;}
+  </style>
+
+</head>
+    <body>
+        <div>
+            <h5 style="text-align: center;">Santos, Jasmin Gail B.          IT-203</h5>
+                <h1 style="text-align: center;">Layout 2</h1>
+                    <div class="card">
+                        <div class="frame">
+                        <div class="box header"></div>
+                        <div class="box col1"></div>
+                        <div class="box col2"></div>
+                        <div class="box sidebar"></div>
+                        <div class="box footer"></div>
+                    </div>
+                </div>
+                <h4 style="text-align: center;"><a href="layout3.html">Layout 3</h4></a>
+                <h4 style="text-align: center;"><a href="layout1.html">Layout 1</h4></a>
+    </body>
+</html>

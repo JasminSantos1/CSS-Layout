@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Layout 3</title>
+  <style>
+    h5 {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+    h1 
+        {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+    h4
+        {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+    body 
+        {display:flex;justify-content:center;align-items:center;
+        min-height:100vh;background:#f795de;font-family:sans-serif;}
+    .card 
+        {width:320px;height:380px;border:3px solid #222;border-radius:8px;
+        padding:10px;background:#62f39a;display:flex;flex-direction:column;}
+    .frame 
+        {flex:1;border:2px solid #62f39a;display:grid;gap:6px;
+        grid-template-columns:70px 1fr;
+        grid-template-rows:50px 1fr 50px;
+        grid-template-areas:
+            "avatar header"
+            "sidebar main"
+            "footer footer";}
+    .box 
+        {border:2px solid #000000;background:#888787;}
+    .avatar 
+        {grid-area:avatar;display:flex;align-items:center;justify-content:center;}
+    .circle 
+        {width:50px;height:50px;border-radius:50%;border:2px solid #000;background:#ec6250;}
+    .header 
+        {grid-area:header;background: #b1afaf;}
+    .sidebar
+        {grid-area:sidebar;background: #b1afaf;}
+    .main   
+        {grid-area:main; background: #b1afaf;}
+    .footer 
+        {grid-area:footer;background: #b1afaf;display:flex;align-items:center;justify-content:space-between;padding:0 10px;}
+    .smallcircle 
+        {width:30px;height:30px;border-radius:50%;border:2px solid #000;background:#ec6250;}
+  </style>
+</head>
+    <body>
+        <div>
+            <h5 style="text-align: center;">Santos, Jasmin Gail B.          IT-203</h5> 
+                    <h1 style="text-align: center;">Layout 3</h1>
+                <div class="card">
+                    <div class="frame">
+                        <div class="avatar"><div class="circle"></div></div>
+                        <div class="box header"></div>
+                        <div class="box sidebar"></div>
+                        <div class="box main"></div>
+                        <div class="box footer">
+                            <div class="box" style="flex:1;height:20px;margin-right:10px;"></div>
+                            <div class="smallcircle"></div>
+                        </div>
+                    </div>
+                </div>
+            <h4 style="text-align: center;"><a href="layout1.html">Layout 1</h4></a>
+            <h4 style="text-align: center;"><a href="layout2.html">Layout 2</h4></a>    
+    </body>
+</html>
